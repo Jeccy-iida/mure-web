@@ -8,7 +8,7 @@
 }
 
 .web {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
     width: 100%;
     height: 100%;
     background-color: #F6F5F0;
@@ -29,22 +29,62 @@
     margin: 0;
 }
 
-.nav {
+ul.nav {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #22b573;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+ul.nav li a:hover:not(.active) {
+    background-color: #fff;
+    color: #22b573;
+}
+
+ul.nav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 480px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+/*.nav {
     position: absolute;
     overflow: hidden;
+    background-color: #22B573;
+    padding: 0px;
+    margin: 0px;
 }
 
 .nav li {
     list-style-type: none;
     float: left;
-    margin-top: 2px;
+    
 }
 
 .nav a {
     font-style: 16px;
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     padding: 10px 20px 0px 0px;
 
     font-family: 'Roboto', sans-serif;
@@ -54,4 +94,69 @@
 
 .nav a:hover {
     text-decoration: underline;
+}
+*/
+/*ここからMESSAGE*/
+.massage h2 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+}
+
+.massage h3 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+}
+
+.massage p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+}
+/*ここからＮＥＷＳ*/
+.news h2 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+}
+
+.news h3 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+}
+
+.news p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 4%;
+}
+
+.list ul,
+ol {
+    color: #1e366a;
+    border-top: solid #1e366a 1px;
+    /*上のボーダー*/
+    border-bottom: solid #1e366a 1px;
+    /*下のボーダー*/
+    padding: 0.5em 0 0.5em 1.5em;
+}
+
+.list ul li,
+ol li {
+    line-height: 1.5;
+    padding: 0.5em 0;
 }
