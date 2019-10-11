@@ -21,18 +21,20 @@
     position: relative;
     padding: 0;
     margin: 0;
-    height: 750px;
+    height: 670px;
 }
 
 #slide img {
     position: absolute;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
     margin: 0;
 }
 
 ul.nav {
     overflow: hidden;
-    margin: auto;
+    margin-top: 0px;
+    padding-top: 0px;
     list-style-type: none;
     background-color: #22b573;
 }
@@ -41,14 +43,27 @@ ul.nav li {
     float: left;
     justify-content: space-between;
     width: 20%;
+    height: 5%;
 }
 
 ul.nav li a {
     display: block;
-    padding: 14px 16px;
+    padding: 9px;
+    margin-top: 25px;
     text-align: center;
     text-decoration: none;
     color: white;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul.nav li img {
+    display: block;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
 }
 
 ul.nav li a:hover:not(.active) {
@@ -119,6 +134,7 @@ ul.nav li a:hover:not(.active) {
     font-size: 30px;
     text-align: center;
     padding: 4%;
+    line-height: 60px;
 }
 
 /*ここからＮＥＷＳ*/
@@ -145,28 +161,11 @@ ul.nav li a:hover:not(.active) {
     color: #22b573;
 }
 
-.news p {
+.day p {
     font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: Light;
+    font-size: 30px;
     text-align: center;
-    padding: 4%;
-}
-
-.list ul,
-ol {
-    color: #1e366a;
-    border-top: solid #1e366a 1px;
-    /*上のボーダー*/
-    border-bottom: solid #1e366a 1px;
-    /*下のボーダー*/
-    padding: 0.5em 0 0.5em 1.5em;
-}
-
-.list ul li,
-ol li {
-    line-height: 1.5;
-    padding: 0.5em 0;
 }
 
 /*ここからTOPIC*/
@@ -253,4 +252,35 @@ ul.last-nav li.right {
     ul.topnav li {
         float: none;
     }
+}
+
+/*ここから上へボタン*/
+#topbutton {
+    position: fixed;
+    z-index: 9999;
+    bottom: 50px;
+    right: 15px;
+    font-size: 30px;
+}
+
+#topbutton a {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    text-decoration: none;
+    color: #22b573;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+#topbutton a:hover {
+    text-decoration: none;
+    background: #22b573;
+    color: #fff;
 }
