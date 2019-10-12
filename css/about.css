@@ -14,71 +14,61 @@
     background-color: #F6F5F0;
 }
 
-
-/*ここからタイトル*/
-
-#slide {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: 670px;
-}
-
-#slide img {
-    position: absolute;
-    padding-left: 0;
-    padding-top: 0;
-    margin: 0;
-}
-
-ul.nav {
-    overflow: hidden;
-    margin-top: 0px;
-    padding-top: 0px;
-    list-style-type: none;
+/*ここから見出し*/
+.top h1{
     background-color: #22b573;
+    color: #fff;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    padding: 3%;
 }
 
-ul.nav li {
-    float: left;
-    justify-content: space-between;
-    width: 20%;
-    height: 5%;
-}
-
-ul.nav li a {
-    display: block;
-    padding: 9px;
-    margin-top: 25px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
+/*ここからメニューバー*/
+.bar {
+    justify-content: space-around;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #fff;
+    color: #22b573;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    text-align: center;
 }
 
-ul.nav li img {
+.bar li {
+    float: left;
+    text-align: center;
+    width: 18%
+}
+
+.bar li a {
     display: block;
-    padding: 7px;
-    text-align: center;
+    padding: 5%;
+    width: 100%;
     text-decoration: none;
-}
-
-ul.nav li a:hover:not(.active) {
-    background-color: #fff;
     color: #22b573;
 }
 
+.bar li a:hover:not(.active) {
+    background-color: #22b573;
+    color: #fff;
+}
+
+.bar li.right {
+    float: right;
+}
+
 @media screen and (max-width: 480px) {
-    ul.topnav li {
+
+    .topnav li.right,
+    .topnav li {
         float: none;
     }
 }
 
-/*ここからMESSAGE*/
-.massage h2 {
+/*ここからＡＢＯＵＴ*/
+.about h2 {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 60px;
@@ -88,7 +78,7 @@ ul.nav li a:hover:not(.active) {
     padding-top: 5%;
 }
 
-.massage h3 {
+.about h3 {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -96,94 +86,26 @@ ul.nav li a:hover:not(.active) {
     color: #22b573;
 }
 
-.massage p {
+.about p {
     font-family: 'M PLUS 1p', sans-serif;
-    font-weight: Light;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 23px;
+    padding: 5% 29%;
+    line-height: 40px;
+}
+
+/*ここからＳＣＨＥＤＵＬＥ*/
+.schedule h2 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
     text-align: center;
+    padding: 0px;
+    color: #22b573;
     padding-top: 5%;
-    ;
-    padding-bottom: 7%;
-    line-height: 65px;
 }
 
-/*ここからＮＥＷＳ*/
-.news {
-    background-color: #efede8;
-}
-
-.news h2 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    padding: 0px;
-    color: #22b573;
-    padding-top: 6%;
-}
-
-
-.news h3 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    color: #22b573;
-    padding-bottom: 5%;
-
-}
-
-.day dl {
-    width: 50%;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-
-}
-
-.day dt {
-    border-bottom: 1px solid #ccc;
-    float: left;
-    padding: 10px 5px;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    color: #22b573;
-}
-
-.day dd {
-    border-bottom: 1px solid #ccc;
-    margin-left: 100px;
-    padding: 10px 5px;
-    color: #4d4d4d;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-}
-
-.ab {
-    background-color: #22b573;
-    border-radius: 5px;
-    color: #fff;
-    margin: 0 20px;
-    padding: 5px 15px;
-    text-decoration: none;
-}
-
-/*ここからTOPIC*/
-
-.topic-title h2 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    padding: 0px;
-    color: #22b573;
-    padding-top: 4%;
-}
-
-
-.topic-title h3 {
+.schedule h3 {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -191,53 +113,30 @@ ul.nav li a:hover:not(.active) {
     color: #22b573;
 }
 
-
-
-.item {
-    display: flex;
-    padding-top: 4%;
-    padding-bottom: 6%;
-}
-
-.item p {
+/*ここから活動場所*/
+.access h2 {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
-    font-size: 15px;
-    color: #4d4d4d;
-    padding: 0% 4% 4% 4%;
+    font-size: 60px;
+    text-align: center;
+    padding: 0px;
+    color: #22b573;
+    padding-top: 5%;
 }
 
-.item h3 {
+.access h3 {
     font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #4d4d4d;
-    padding: 4%;
-    ;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #22b573;
 }
 
-.item2 h3 {
-    padding-top: 8.5%;
-}
-
-.item1 {
-    background-color: #fff;
-}
-
-.item2 {
-    background-color: #fff;
-}
-
-.item2 img {
-    padding-top: 2%;
-}
-
-
-/*ここから最後*/
-
+/*ここから下のバー*/
 
 .last-nav {
-    justify-content: space-around overflow: hidden;
+    justify-content: space-around
+    overflow: hidden;
     list-style-type: none;
     background-color: #22b573;
     color: #fff;
