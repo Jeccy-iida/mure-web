@@ -77,38 +77,6 @@ ul.nav li a:hover:not(.active) {
     }
 }
 
-/*.nav {
-    position: absolute;
-    overflow: hidden;
-    background-color: #22B573;
-    padding: 0px;
-    margin: 0px;
-}
-
-.nav li {
-    list-style-type: none;
-    float: left;
-    
-}
-
-.nav a {
-    font-style: 16px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px 0px 0px;
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-*/
-
-
 /*ここからMESSAGE*/
 .massage h2 {
     font-family: 'M PLUS 1p', sans-serif;
@@ -133,8 +101,8 @@ ul.nav li a:hover:not(.active) {
     font-weight: Light;
     font-size: 30px;
     text-align: center;
-    padding: 4%;
-    line-height: 60px;
+    padding: 7%;
+    line-height: 65px;
 }
 
 /*ここからＮＥＷＳ*/
@@ -168,6 +136,29 @@ ul.nav li a:hover:not(.active) {
     text-align: center;
 }
 
+.day {
+    font-family: 'M PLUS 1p', sans-serif;
+    list-style: none;
+    padding: 0.5em 0.7em;
+    border: solid 2px #efede8;
+    border-radius: 5px;
+}
+
+.day th {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #22b573;
+}
+
+.day td {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
+
 /*ここからTOPIC*/
 
 .topic-title h2 {
@@ -197,6 +188,27 @@ ul.nav li a:hover:not(.active) {
     padding-bottom: 6%;
 }
 
+.item p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #4d4d4d;
+    padding: 0% 4% 4% 4%;
+}
+
+.item h3 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4d4d4d;
+    padding: 4%;
+    ;
+}
+
+.item2 h3 {
+    padding-top: 8.5%;
+}
+
 .item1 {
     background-color: #fff;
 }
@@ -206,18 +218,13 @@ ul.nav li a:hover:not(.active) {
 }
 
 
-
-< !--ここから最後の帯--- > extracted1 {
+< !--ここから最後の帯--- > .last-name {
     background-color: #22b573;
     color: #fff;
-    text-align: center;
-    padding: 4% 0;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
 }
 
-ul.last-nav {
+
+.last-nav {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -225,11 +232,11 @@ ul.last-nav {
     background-color: #22b573;
 }
 
-ul.last-nav li {
+.last-nav li {
     float: left;
 }
 
-ul.last-nav li a {
+.last-nav li a {
     display: block;
     padding: 14px 16px;
     text-align: center;
@@ -237,19 +244,19 @@ ul.last-nav li a {
     color: white;
 }
 
-ul.last-nav li a:hover:not(.active) {
+.last-nav li a:hover:not(.active) {
     background-color: #fff;
     color: #22b573;
 }
 
-ul.last-nav li.right {
+.last-nav li.right {
     float: right;
 }
 
 @media screen and (max-width: 480px) {
 
-    ul.topnav li.right,
-    ul.topnav li {
+    .topnav li.right,
+    .topnav li {
         float: none;
     }
 }
