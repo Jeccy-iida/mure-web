@@ -9,7 +9,7 @@
 
 .web {
     font-family: 'M PLUS 1p', sans-serif;
-        overflow: hidden;
+    overflow: hidden;
     background-color: #F6F5F0;
 }
 
@@ -112,6 +112,12 @@
     color: #22b573;
 }
 
+.schedule-img {
+    margin-top: 7%;
+    text-align: center;
+    margin-left: 8%;
+}
+
 /*ここから活動場所*/
 .access h2 {
     font-family: 'M PLUS 1p', sans-serif;
@@ -131,7 +137,7 @@
     color: #22b573;
 }
 
-.right h3{
+.right h3 {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 40px;
@@ -141,7 +147,7 @@
     width: 50%
 }
 
-.right h4{
+.right h4 {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -149,15 +155,15 @@
     padding-top: 17%;
 }
 
-.right p{
+.right p {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #4d4d4d;
-    padding-top: 6%;
+    padding-top: 10%;
 }
 
-.right a{
+.right a {
     color: #22b573;
 }
 
@@ -180,58 +186,48 @@
 .right {
     margin-left: 25%;
 }
+
 /*ここから下のバー*/
 
-.last-nav {
+ul.last-nav {
+    padding: 0%;
     list-style-type: none;
     background-color: #22b573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.last-nav li {
+    width: 10%;
+    margin-top: 2.5%;
+}
+
+ul.last-nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
     color: #fff;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
-    font-size: 15px;
-    width: 100%;
-    margin-left: 5%;
-}
-
-.last-nav li {
-    float: left;
+    font-size: 20px;
     text-align: center;
-    width: 15%;
-    
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.last-nav li a {
-    display: block;
-    padding: 12px 0px;
-    margin: 5% auto;
-    width: 100%;
-    text-decoration: none;
-    color: #fff;
-}
-
-.last-nav li a:hover:not(.active) {
-    background-color: #fff;
-    color: #22b573;
-}
-
-.last-nav li.right {
-    float: right;
-}
-
-@media screen and (max-width: 480px) {
-
-    .topnav li.right,
-    .topnav li {
-        float: none;
-    }
+ul.last-nav li a:hover:not(.active) {
+    color: #dacc2c;
 }
 
 .last-name {
     background-color: #22b573;
     color: #fff;
     text-align: center;
-    padding-top: 6%;
-    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 2%;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 200;
     font-size: 13px;
@@ -257,9 +253,6 @@
     text-align: center;
     display: block;
     border-radius: 50%;
-    -moz-box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-    -moz-opacity: 0.8;
     opacity: 0.8;
     text-align: center;
 }

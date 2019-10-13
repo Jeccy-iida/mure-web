@@ -25,20 +25,24 @@
 
 #slide img {
     position: absolute;
-    padding-left: 0;
-    padding-top: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     width: 100%;
     height: auto;
 }
 
 ul.nav {
     padding: 0%;
+    margin: 0%;
     list-style-type: none;
     background-color: #22b573;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+ul.nav img{
+    padding-left: 20%;
 }
 
 ul.nav li {
@@ -116,7 +120,7 @@ ul.nav li a:hover:not(.active) {
     font-size: 30px;
     text-align: center;
     padding-top: 5%;
-    ;
+    color: #4d4d4d;
     padding-bottom: 7%;
     line-height: 65px;
 }
@@ -255,7 +259,7 @@ ul.nav li a:hover:not(.active) {
     }
 
     .newslist li .tagu {
-        font-size: 2px;
+        font-size: 5px;
     }
 
     .sirusi {
@@ -263,8 +267,8 @@ ul.nav li a:hover:not(.active) {
     }
 
     .newslist li time {
-        font-size: 1px;
-        padding-top: 4px;
+        font-size: 6px;
+        padding-top: 1.5px;
         padding-left: 0%;
     }
 
