@@ -9,7 +9,7 @@
 
 .web {
     font-family: 'M PLUS 1p', sans-serif;
-        overflow: hidden;
+    overflow: hidden;
     background-color: #F6F5F0;
 }
 
@@ -66,122 +66,9 @@
     }
 }
 
-/*ここからＡＢＯＵＴ*/
-.about h2 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    padding: 0px;
-    color: #22b573;
-    padding-top: 5%;
-}
-
-.about h3 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    color: #22b573;
-}
-
-.about p {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 300;
-    font-size: 23px;
-    padding: 5% 29%;
-    line-height: 40px;
-}
-
-/*ここからＳＣＨＥＤＵＬＥ*/
-.schedule h2 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    padding: 0px;
-    color: #22b573;
-    padding-top: 5%;
-}
-
-.schedule h3 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    color: #22b573;
-}
-
-/*ここから活動場所*/
-.access h2 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    padding: 0px;
-    color: #22b573;
-    padding-top: 5%;
-}
-
-.access h3 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    color: #22b573;
-}
-
-.right h3{
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    color: #4d4d4d;
-    padding-top: 5%;
-    text-align: none;
-    width: 50%
-}
-
-.right h4{
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #4d4d4d;
-    padding-top: 17%;
-}
-
-.right p{
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #4d4d4d;
-    padding-top: 6%;
-}
-
-.right a{
-    color: #22b573;
-}
-
-.access-item {
-    border-radius: 10px;
-    padding: 0px;
-    width: 80%;
-    height: 60vh;
-    padding-bottom: 10%;
-}
-
-.left {
-    width: 50%;
-    height: 100%;
-    float: left;
-    margin-top: 7%;
-    margin-right: 10%;
-}
-
-.right {
-    margin-left: 25%;
-}
+/*ここからSCRIPT*/
+/*ここからBOX*/
 /*ここから下のバー*/
-
 .last-nav {
     list-style-type: none;
     background-color: #22b573;
@@ -197,7 +84,7 @@
     float: left;
     text-align: center;
     width: 15%;
-    
+
 }
 
 .last-nav li a {

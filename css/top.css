@@ -9,8 +9,7 @@
 
 .web {
     font-family: 'M PLUS 1p', sans-serif;
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
     background-color: #F6F5F0;
 }
 
@@ -34,49 +33,35 @@
 }
 
 ul.nav {
-    overflow: hidden;
-    margin-top: 0px;
-    padding-top: 0px;
+    padding: 0%;
     list-style-type: none;
     background-color: #22b573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul.nav li {
-    float: left;
-    justify-content: space-between;
-    width: 20%;
-    height: 5%;
+    width: 100%;
 }
 
 ul.nav li a {
     display: block;
-    padding: 9px;
-    margin-top: 25px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
-}
-
-ul.nav li img {
-    display: block;
-    padding: 7px;
-    text-align: center;
-    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 ul.nav li a:hover:not(.active) {
-    background-color: #fff;
-    color: #22b573;
-}
-
-@media screen and (max-width: 480px) {
-    ul.topnav li {
-        float: none;
-    }
+    color: #dacc2c;
 }
 
 @media screen and (max-width : 480px) {
@@ -91,30 +76,17 @@ ul.nav li a:hover:not(.active) {
     }
 
     .logo {
-        width: 80%;
-        height: 80%;
-
+        width: 100%;
+        height: 100%;
     }
 
     ul.nav li a {
-        padding: 9px;
-        margin-top: 5px;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        font-family: 'M PLUS 1p', sans-serif;
-        font-weight: 600;
-        font-size: 12px;
-        text-align: center;
+        font-size: 10px;
     }
 
     .small {
-        font-size: 1px;
+        font-size: 0.1px;
         font-weight: 100;
-    }
-
-    ul.nav {
-        padding-left: 0%;
     }
 }
 
@@ -362,6 +334,10 @@ ul.nav li a:hover:not(.active) {
     padding-top: 2%;
 }
 
+.item a {
+    color: #22b573;
+}
+
 @media screen and (max-width : 480px) {
     .topic h2 {
         font-size: 40px;
@@ -386,6 +362,10 @@ ul.nav li a:hover:not(.active) {
         font-size: 15px;
     }
 
+    .item2 img {
+        padding-top: 0%;
+    }
+
     .item {
         flex-direction: column;
         width: 80%;
@@ -399,42 +379,45 @@ ul.nav li a:hover:not(.active) {
     .item2 {
         margin-bottom: 7%;
     }
+
+    .item2 h3 {
+        padding-top: 1%;
+    }
 }
 
 /*ここから最後*/
 
-
-.last-nav {
-    justify-content: space-around overflow: hidden;
+ul.last-nav {
+    padding: 0%;
     list-style-type: none;
     background-color: #22b573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.last-nav li {
+    width: 10%;
+    margin-top: 2.5%;
+}
+
+ul.last-nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
     color: #fff;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 600;
-    font-size: 15px;
-}
-
-.last-nav li {
-    float: left;
+    font-size: 20px;
     text-align: center;
-    width: 19%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.last-nav li a {
-    display: block;
-    padding: 25px;
-    width: 100%;
-    text-decoration: none;
-    color: #fff;
-}
-
-.last-nav li a:hover:not(.active) {
-    background-color: #fff;
-    color: #22b573;
-}
-
-.last-nav li.right {
-    float: right;
+ul.last-nav li a:hover:not(.active) {
+    color: #dacc2c;
 }
 
 @media screen and (max-width: 480px) {
@@ -449,27 +432,21 @@ ul.nav li a:hover:not(.active) {
     background-color: #22b573;
     color: #fff;
     text-align: center;
-    padding-top: 6%;
-    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 2%;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 200;
     font-size: 13px;
 }
 
 @media screen and (max-width : 480px) {
+
+    ul.last-nav li a {
+        font-size: 10px;
+    }
+
     .last-name {
-        padding-top: 15%;
-    }
-
-    .last-nav li {
-        width: 17%;
-        justify-content: space-between;
-        padding: 0%;
-        margin: 0%;
-    }
-
-    .last-nav li a {
-        padding: 25% 0% 0% 0%;
+        font-size: 7px;
     }
 }
 
@@ -484,8 +461,8 @@ ul.nav li a:hover:not(.active) {
 }
 
 #topbutton a {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: #22b573;
     text-decoration: none;
     color: #fff;
@@ -493,9 +470,6 @@ ul.nav li a:hover:not(.active) {
     text-align: center;
     display: block;
     border-radius: 50%;
-    -moz-box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-    -moz-opacity: 1;
     opacity: 0.8;
     text-align: center;
 }
@@ -504,4 +478,23 @@ ul.nav li a:hover:not(.active) {
     text-decoration: none;
     background: #fff;
     color: #22b573;
+}
+
+@media screen and (max-width : 480px) {
+    #topbutton {
+        z-index: 9999;
+        font-size: 30px;
+    }
+}
+
+/*フェードインのやつ*/
+.fadein {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: all 0.5s;
+}
+
+.fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
 }
